@@ -1,0 +1,49 @@
+@media screen and (max-width:992px) {
+    .menu-icon{display: block;}
+    .header-bottom #toggle-nav{max-height: 0px; overflow: hidden; transition: 0.8s;}
+    .header-bottom #toggle-nav.active{max-height: 100vh;}
+    .menu-icon{
+         background-image: url("../img/bar.png");
+         cursor:pointer;
+         width:40px;
+         height:40px;
+         background-color:#fff;
+         object-fit: cover;
+         background-size:cover;
+         background-position: center;
+        }
+        .menu-icon.active{
+            background-image: url('../img/close.png');
+        }
+        #toggle-nav ul li {
+            display: block;
+          }
+          #toggle-nav {
+            position: absolute;
+            top: 118px;
+            width: 100%;
+            text-align: center;
+            background: var(--bg-color);
+            overflow: hidden;
+            left: 0;
+            z-index: 11;
+          }
+          .header-top-content ul {
+            display: none;
+          }
+          .blog-desc h3{
+              font-size:16px;
+          }
+}
+@media screen and (max-width:600px ) {
+    .challenges-title h2,.hero-content h2{
+        font-size:25px;
+    }
+}
+@media screen and (max-width:500px) {
+    .logo{font-size:25px;}
+    .menu-icon{width:35px;height:35px;}
+    #toggle-nav{top:104px;}
+    .h-btn{font-size:12px;font-weight: 600;}
+    .blog-content img{width:120px;}
+}
